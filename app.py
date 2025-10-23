@@ -5,8 +5,16 @@ app = Flask(__name__)
 app.secret_key = "f$0jg0sdis498yfoskjdf7g9aouhf48"  # Replace with a secure key in production
 
 @app.route('/', methods=['GET'])
-def home():
+def home_page():
     return render_template('home.html')
+
+@app.route('/contact', methods=['GET'])
+def contact_page():
+    return render_template('contact.html')
+
+@app.route('/projects', methods=['GET'])
+def project_page():
+    return render_template('projects.html')
 
 
 

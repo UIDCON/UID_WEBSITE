@@ -1,6 +1,30 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Welcome to Unique and Designs Innovation</h1>
-<p>Your one-stop solution for innovative designs and unique products.</p>
+<div id = "header"> 
+    <header class="bg-dark py-3 mb-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a href="{{url_for('home_page')}}" class="text-white text-decoration-none text-center">
+                <h1 class="display-3 mb-0">Unique and Designs Innovation</h1>
+            </a>
+        </div>
+    </header>
+</div>
+<div id = "firstSection" class="container mt-4 mb-4">
+    <div class="jumbotron">
+        <h1 class="display-1 text-center">Welcome to Unique and Designs Innovation!</h1>
+    </div>
+<div id ="secondSection" class="container mt-4 mb-4">
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Innovative Solutions for a Unique World</h1>
+            <p class="col-md-8 fs-4">At Unique and Designs Innovation, we are dedicated to bringing your creative visions to life through cutting-edge design and technology. Explore our projects and get in touch to see how we can collaborate!</p>
+        </div>
+    </div>
+</div>
+<div id ="thirdSection" class="container mt-4 mb-4">
+
+
+</div>
+
 {% endblock %}
